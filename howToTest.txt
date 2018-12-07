@@ -1,0 +1,41 @@
+How to test 'Compare page':
+
+1)  Create new gitHub repository via web interface.
+2)  Clone the repository locally.
+3)  Create the first user (abc_user).
+4)  Commit the test files to the repository by the first user.
+5)  Create a branch with the name 'branch'
+6)  Add 2 strings to abc_file by the first user.
+7)  Commit and push changes.
+8)  Create the second user (bcd_user).
+9)  Change 10 strings in bcd_file by the second user.
+10) Commit and push changes.
+11) Create the third user (cdf_user).
+12) Delete 3 strings in cdf_file by the third user.
+13) Commit and push changes.
+
+Some test script to facilitate performing the task:
+
+git config user.name "abc_user"
+git config user.email "abc@gmail.com"
+git add abc_file
+git commit -am "2 strings added to abc_file"
+git push origin branch
+gitplugin
+testtest1`
+
+git config user.name "bcd_user"
+git config user.email "bcd@gmail.com"
+git add bcd_file
+git commit -am "10 strings changed in bcd_file"
+git push origin branch
+gitplugin
+testtest1`
+
+git config user.name "cdf_user"
+git config user.email "cdf@gmail.com"
+git add cdf_file
+git commit -am "3 strings deleted in cdf_file"
+git push origin branch
+gitplugin
+testtest1`
